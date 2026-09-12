@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Para ti, Mariana ♡ | Nuestro Diario</title>
+  <meta name="description" content="Un pequeño rincón digital hecho especialmente para Mariana, con recuerdos, gatos y mucho cariño.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Barra de progreso superior -->
+  <div id="reading-progress" class="reading-progress-bar"></div>
+
+  <!-- Navegación Tipo Diario -->
+  <nav class="journal-nav" id="main-nav">
+    <div class="nav-wrapper">
+      <a href="#portada" class="nav-brand">
+        <span class="nav-heart">♡</span> Mariana & Yo
+      </a>
+      <div class="nav-links">
+        <a href="#historia" class="nav-item">Recuerdos</a>
+        <a href="#lo-que-amo" class="nav-item">Lo que amo</a>
+        <a href="#gatos" class="nav-item">Gatos 🐈</a>
+        <a href="#ciencia" class="nav-item">Ciencia 🧪</a>
+        <a href="#interactivo" class="nav-item">Juegos ✨</a>
+        <a href="#nosotros" class="nav-item">Nosotros</a>
+        <a href="#carta" class="nav-item nav-item-special">La Carta 💌</a>
+      </div>
+      <div class="nav-controls">
+        <button id="sound-toggle" class="control-btn" title="Sonido interactivo" aria-label="Alternar sonido">
+          <span class="sound-icon">🔊</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =======================================================
+       1. PORTADA / HERO (Estilo Diario & Scrapbook)
+       ======================================================= -->
+  <header id="portada" class="hero-section">
+    <div class="hero-container">
+      <div class="scrapbook-cover">
+        <!-- Cinta washi tape decorativa -->
+        <div class="washi-tape washi-top"></div>
+        
+        <div class="cover-badge">
+          <span>✦ Cuaderno personal hecho para ti ✦</span>
+        </div>
+
+        <h1 class="cover-title">
+          Para ti, <span class="highlight-name">Mariana</span>
+          <span class="title-heart">♡</span>
+        </h1>
+
+        <p class="cover-subtitle">
+          Hice este pequeño rincón para ti, para guardar nuestras cosas, reírnos un rato
+          y recordarte lo mucho que te quiero todos los días.
+        </p>
+
+        <div class="cover-sticker-row">
+          <span class="doodle-sticker" title="Filosofía">📜 Epicuro</span>
+          <span class="doodle-sticker" title="Roblox">🎮 99 Noches</span>
+          <span class="doodle-sticker" title="Miau">🐈 Gaticos</span>
+          <span class="doodle-sticker" title="100% Real">❤️ Para Mariana</span>
+        </div>
+
+        <div class="hero-polaroid-wrap">
+          <div class="polaroid-frame">
+            <div class="washi-tape washi-mini"></div>
+            <img src="assets/fotos/foto_recuerdo_nosotros.jpg" alt="Nosotros ♡">
+            <div class="polaroid-caption">Nosotros ♡</div>
+          </div>
+        </div>
+
+        <div class="cover-action">
+          <a href="#historia" class="btn-start" id="btn-empezar">
+            <span>Abrir nuestro diario ♡</span>
+            <span class="btn-arrow">↓</span>
+          </a>
+        </div>
+
+        <div class="cover-footer-note">
+          <p>Hecho a mano, con recuerdos reales y mucho cariño.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================
+         2. NUESTRA HISTORIA (O al menos lo que más recuerdo)
+         ======================================================= -->
+    <section id="historia" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Capítulo 01</span>
+        <h2 class="section-heading">Nuestra Historia (O al menos lo que más recuerdo)</h2>
+        <p class="section-subtext">Así es como recuerdo que fueron pasando las cosas entre nosotros.</p>
+      </div>
+
+      <div class="timeline-wrapper">
+        <!-- Hito 1: Filosofía -->
+        <div class="timeline-entry left">
+          <div class="tape-strip"></div>
+          <div class="timeline-card">
+            <div class="timeline-badge-date">El Comienzo</div>
+            <div class="card-icon-header">📜</div>
+            <h3 class="entry-title">Filosofía & Epicuro</h3>
+            <p class="entry-text">
+              Nuestra primera conversación empezó por ese trabajo de filosofía sobre el <strong>epicureísmo</strong>.
+              Quién se iba a imaginar que ponernos a hablar de Epicuro y de la tranquilidad mental
+              iba a terminar en que no dejáramos de hablar todos los días.
+            </p>
+            <div class="card-photo-attachment">
+              <img src="assets/fotos/gato_filosofo_chocomilk.jpg" alt="Epicuro y chocomilk" loading="lazy">
+              <div class="card-photo-caption">Epicuro y un vasito con chocomilk filosófico</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hito 2: Roblox -->
+        <div class="timeline-entry right">
+          <div class="tape-strip"></div>
+          <div class="timeline-card">
+            <div class="timeline-badge-date">Tardes de risas</div>
+            <div class="card-icon-header">🎮</div>
+            <h3 class="entry-title">Las Tardes en Roblox</h3>
+            <p class="entry-text">
+              Después empezamos a hablar cada vez más y nos pusimos a jugar Roblox juntos.
+              Pasábamos horas en <em>"Roba un brainrot"</em> y tratando de no morir en <em>"99 noches"</em>.
+              Me acuerdo de cómo nos reíamos de cualquier tontería y de lo bien que la pasaba contigo.
+            </p>
+            <div class="card-photo-attachment">
+              <img src="assets/fotos/gato_shaka_buenavibra.jpg" alt="Roblox buena vibra" loading="lazy">
+              <div class="card-photo-caption">Modo Roblox: 100% buena vibra jugando juntos</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hito 3: 26 de Septiembre de 2025 -->
+        <div class="timeline-entry left">
+          <div class="tape-strip"></div>
+          <div class="timeline-card highlight-card">
+            <div class="timeline-badge-date">26 de Septiembre de 2025</div>
+            <div class="card-icon-header">🏀</div>
+            <h3 class="entry-title">La Pregunta en la Cancha</h3>
+            <p class="entry-text">
+              Ese día unos amigos me arrinconaron a preguntarme directo si me gustabas.
+              Les dije que <strong>sí</strong> sin dudarlo ni un segundo, y de una nos llevaron
+              a la cancha a los dos para que habláramos. Yo estaba con unos nervios terribles,
+              pero fue el momento en que todo se volvió real.
+            </p>
+            <div class="card-photo-attachment">
+              <img src="assets/fotos/gato_sonrojado.webp" alt="Nervios en la cancha" loading="lazy">
+              <div class="card-photo-caption">Yo con la cara roja de los nervios en la cancha</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hito 4: Febrero de 2026 -->
+        <div class="timeline-entry right">
+          <div class="tape-strip"></div>
+          <div class="timeline-card">
+            <div class="timeline-badge-date">Febrero de 2026</div>
+            <div class="card-icon-header">💬</div>
+            <h3 class="entry-title">Acercándonos de Nuevo</h3>
+            <p class="entry-text">
+              En febrero te acercaste a hablarme otra vez y me sacaste el tema de aquella conversación
+              sobre intentar algo. Para mí significó un montón que te naciera esa iniciativa y ver
+              que todavía teníamos esa conexión tan bonita.
+            </p>
+            <div class="card-photo-attachment">
+              <img src="assets/fotos/gato_sorprendido.webp" alt="Sorpresa bonita" loading="lazy">
+              <div class="card-photo-caption">Mi cara cuando me volviste a sacar el tema</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hito 5: 6 de Marzo de 2026 -->
+        <div class="timeline-entry left">
+          <div class="tape-strip"></div>
+          <div class="timeline-card highlight-card">
+            <div class="timeline-badge-date">6 de Marzo de 2026</div>
+            <div class="card-icon-header">✨</div>
+            <h3 class="entry-title">¿Lo Intentamos Nuevamente?</h3>
+            <p class="entry-text">
+              El 6 de marzo me armé de valor y te pregunté si querías que intentáramos nuevamente.
+              Fue una decisión que tomé con toda la seguridad de querer construir algo lindo contigo.
+            </p>
+          </div>
+        </div>
+
+        <!-- Hito 6: La Mecedora en la Sala -->
+        <div class="timeline-entry right">
+          <div class="tape-strip"></div>
+          <div class="timeline-card polaroid-style">
+            <div class="timeline-badge-date">Finales de Abril / Inicios de Mayo</div>
+            <div class="card-icon-header">🪑</div>
+            <h3 class="entry-title">La Mecedora en tu Sala</h3>
+            <p class="entry-text">
+              Nos dimos nuestro primer beso en tu casa, en la mecedora de la sala. Fue a finales de abril
+              o comienzos de mayo. Para mí fue un momento súper bonito y especial. Aunque me quedé con esa
+              espinita por cómo reaccioné con los nervios del momento, sé que tengo una segunda oportunidad
+              para cuando nos demos un verdadero beso.
+            </p>
+            <div class="card-photo-attachment">
+              <img src="assets/fotos/foto_recuerdo_nosotros.jpg" alt="Un momento especial" loading="lazy">
+              <div class="card-photo-caption">Un recuerdo súper lindo que guardo con cariño</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         3. LO QUE AMO DE TI (Tablón de notas)
+         ======================================================= -->
+    <section id="lo-que-amo" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Capítulo 02</span>
+        <h2 class="section-heading">Lo que Amo de Ti</h2>
+        <p class="section-subtext">Cosas tuyas que me encantan todos los días.</p>
+      </div>
+
+      <div class="sticky-notes-grid">
+        <!-- Nota 1: Ojos -->
+        <div class="sticky-note note-yellow">
+          <div class="pin"></div>
+          <div class="note-icon">👀</div>
+          <h3 class="note-title">Tus Ojos</h3>
+          <p class="note-body">
+            Tienen una mirada súper bonita y profunda. Me encanta cuando me miras directo a los ojos, aunque a veces me ponga nervioso.
+          </p>
+        </div>
+
+        <!-- Nota 2: Cara -->
+        <div class="sticky-note note-pink">
+          <div class="pin"></div>
+          <div class="note-icon">✨</div>
+          <h3 class="note-title">Tu Cara</h3>
+          <p class="note-body">
+            Me fascina verte, tus gestos cuando te ríes, cuando te quedas pensando o cuando me haces muecas graciosas.
+          </p>
+        </div>
+
+        <!-- Nota 3: Cabello Suelto -->
+        <div class="sticky-note note-peach">
+          <div class="pin"></div>
+          <div class="note-icon">🌸</div>
+          <h3 class="note-title">Tu Cabello Suelto</h3>
+          <p class="note-body">
+            Cuando lo llevas suelto te ves demasiado hermosa. No hay forma de que no me quede embobado mirándote.
+          </p>
+        </div>
+
+        <!-- Nota 4: Carácter -->
+        <div class="sticky-note note-green">
+          <div class="pin"></div>
+          <div class="note-icon">🛡️</div>
+          <h3 class="note-title">Tu Carácter</h3>
+          <p class="note-body">
+            Eres firme, clara y muy auténtica. No finges nada para complacer a nadie y eso lo valoro un montón.
+          </p>
+        </div>
+
+        <!-- Nota 5: Forma de pensar -->
+        <div class="sticky-note note-blue">
+          <div class="pin"></div>
+          <div class="note-icon">🧠</div>
+          <h3 class="note-title">Tu Forma de Pensar</h3>
+          <p class="note-body">
+            Tu madurez, la manera en que analizas las cosas y cómo ves la vida. Hablar contigo siempre me enseña algo.
+          </p>
+        </div>
+
+        <!-- Nota 6: Manera de ser -->
+        <div class="sticky-note note-purple">
+          <div class="pin"></div>
+          <div class="note-icon">🌿</div>
+          <h3 class="note-title">Tu Manera de Ser</h3>
+          <p class="note-body">
+            Tu calma, tu espacio propio y cómo eres conmigo cuando estamos los dos. Te quiero exactamente tal y como eres.
+          </p>
+        </div>
+
+        <!-- Nota 7: Capacidad -->
+        <div class="sticky-note note-yellow">
+          <div class="pin"></div>
+          <div class="note-icon">💡</div>
+          <h3 class="note-title">Tu Gran Capacidad</h3>
+          <p class="note-body">
+            Eres una persona demasiado inteligente y lista. Reto que te pones en frente, reto que sacas adelante.
+          </p>
+        </div>
+
+        <!-- Nota 8: Determinación -->
+        <div class="sticky-note note-pink">
+          <div class="pin"></div>
+          <div class="note-icon">🔥</div>
+          <h3 class="note-title">Tu Determinación</h3>
+          <p class="note-body">
+            Cuando te propones algo no te frena nada ni nadie. Tienes una fuerza de voluntad que admiro muchísimo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         4. EXPEDIENTE GATUNO (Imágenes reales de gatos)
+         ======================================================= -->
+    <section id="gatos" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Capítulo 03</span>
+        <h2 class="section-heading">Nuestros Gaticos 🐈</h2>
+        <p class="section-subtext">
+          Toca a cada gatico para ver qué tiene que decirte.
+        </p>
+      </div>
+
+      <div class="cat-dossier-grid">
+        <!-- Gato 1 -->
+        <div class="cat-dossier-card" data-cat="1">
+          <div class="cat-photo-frame">
+            <img src="assets/fotos/gato_filosofo_chocomilk.jpg" alt="Gatico 1" class="cat-img" onerror="this.classList.add('img-failed')">
+            <div class="cat-fallback">
+              <span class="fallback-icon">🐱</span>
+              <span class="fallback-text">Gatico 1</span>
+            </div>
+          </div>
+          <div class="cat-info">
+            <div class="cat-codename">El filósofo del chocomilk</div>
+            <p class="cat-desc">Siempre mira con cara de estar juzgando con seriedad, pero en el fondo solo quiere comida y cariño.</p>
+            <div class="cat-interactive-bubble" id="bubble-cat-1">
+              "Tócame para ver qué opino..."
+            </div>
+          </div>
+        </div>
+
+        <!-- Gato 2 -->
+        <div class="cat-dossier-card" data-cat="2">
+          <div class="cat-photo-frame">
+            <img src="assets/fotos/gato_sorprendido.webp" alt="Gatico 2" class="cat-img" onerror="this.classList.add('img-failed')">
+            <div class="cat-fallback">
+              <span class="fallback-icon">😺</span>
+              <span class="fallback-text">Gatico 2</span>
+            </div>
+          </div>
+          <div class="cat-info">
+            <div class="cat-codename">El sorprendido del bosque</div>
+            <p class="cat-desc">Su pasión número uno es meterse entre las cobijas o asombrarse de cualquier cosa pequeña.</p>
+            <div class="cat-interactive-bubble" id="bubble-cat-2">
+              "Tócame para despertarme..."
+            </div>
+          </div>
+        </div>
+
+        <!-- Gato 3 -->
+        <div class="cat-dossier-card" data-cat="3">
+          <div class="cat-photo-frame">
+            <img src="assets/fotos/gato_sonrojado.webp" alt="Gatico 3" class="cat-img" onerror="this.classList.add('img-failed')">
+            <div class="cat-fallback">
+              <span class="fallback-icon">😸</span>
+              <span class="fallback-text">Gatico 3</span>
+            </div>
+          </div>
+          <div class="cat-info">
+            <div class="cat-codename">El tímido sonrojado</div>
+            <p class="cat-desc">Pone cara de pena con mejillas rosadas cuando le dicen cosas bonitas.</p>
+            <div class="cat-interactive-bubble" id="bubble-cat-3">
+              "Tócame si te atreves..."
+            </div>
+          </div>
+        </div>
+
+        <!-- Gato 4 -->
+        <div class="cat-dossier-card" data-cat="4">
+          <div class="cat-photo-frame">
+            <img src="assets/fotos/gato_ojitos_tiernos.webp" alt="Gatico 4" class="cat-img" onerror="this.classList.add('img-failed')">
+            <div class="cat-fallback">
+              <span class="fallback-icon">🦁</span>
+              <span class="fallback-text">Gatico 4</span>
+            </div>
+          </div>
+          <div class="cat-info">
+            <div class="cat-codename">El de los ojos tiernos</div>
+            <p class="cat-desc">Mira con esos ojos redondos e inocentes y ya con eso consigue que le hagan caso en todo.</p>
+            <div class="cat-interactive-bubble" id="bubble-cat-4">
+              "Tócame para recibir ronroneos..."
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         5. ESTUDIO CIENTÍFICO SOBRE MARIANA 🧪
+         ======================================================= -->
+    <section id="ciencia" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Capítulo 04</span>
+        <h2 class="section-heading">Mi Estudio Científico sobre Ti 🧪</h2>
+        <p class="section-subtext">
+          Mis observaciones totalmente serias (bueno, no tanto) después de pasar tiempo contigo.
+        </p>
+      </div>
+
+      <div class="lab-paper">
+        <div class="lab-header">
+          <div class="lab-title">LABORATORIO DE OBSERVACIÓN DE MARIANA</div>
+          <div class="lab-meta">Resultados 100% reales recopilados por mí</div>
+        </div>
+
+        <div class="lab-grid">
+          <!-- Experimento 1 -->
+          <div class="lab-card">
+            <div class="lab-card-badge">Observación 01</div>
+            <h4>El Efecto de tu Cabello Suelto</h4>
+            <p class="lab-desc">
+              Mi ritmo cardíaco cuando te recoges el cabello vs cuando te lo sueltas:
+            </p>
+            <div class="chart-box">
+              <div class="chart-row">
+                <span class="chart-label">Cabello recogido:</span>
+                <div class="bar-container"><div class="bar bar-normal" style="width: 50%;">75 bpm (Tranquilo)</div></div>
+              </div>
+              <div class="chart-row">
+                <span class="chart-label">Cabello suelto:</span>
+                <div class="bar-container"><div class="bar bar-high" style="width: 95%;">160 bpm (Me reinicio) ⚡</div></div>
+              </div>
+            </div>
+            <div class="lab-finding">
+              <strong>Conclusión:</strong> Verte con el cabello suelto me deja sin palabras cada vez.
+            </div>
+          </div>
+
+          <!-- Experimento 2 -->
+          <div class="lab-card">
+            <div class="lab-card-badge">Observación 02</div>
+            <h4>Tu Personalidad</h4>
+            <p class="lab-desc">De qué estás hecha según mis cálculos:</p>
+            <div class="donut-visual">
+              <div class="comp-item"><span class="color-dot c1"></span> <strong>50%</strong> Determinación pura</div>
+              <div class="comp-item"><span class="color-dot c2"></span> <strong>30%</strong> Inteligencia y sentido común</div>
+              <div class="comp-item"><span class="color-dot c3"></span> <strong>15%</strong> Cara bonita cuando te ríes</div>
+              <div class="comp-item"><span class="color-dot c4"></span> <strong>5%</strong> Paciencia para aguantar mis bobadas</div>
+            </div>
+            <div class="lab-finding">
+              <strong>Conclusión:</strong> La combinación exacta para hacerme muy feliz.
+            </div>
+          </div>
+
+          <!-- Experimento 3 -->
+          <div class="lab-card">
+            <div class="lab-card-badge">Observación 03</div>
+            <h4>Nuestras Partidas de Roblox</h4>
+            <p class="lab-desc">Haciendo equipo en "99 Noches" y en "Roba un brainrot":</p>
+            <div class="lab-data-point">
+              <span class="data-val">100%</span>
+              <span class="data-lbl">Risas garantizadas en cada partida</span>
+            </div>
+            <div class="lab-finding">
+              <strong>Conclusión:</strong> Aunque a veces perdamos, jugar contigo siempre vale la pena.
+            </div>
+          </div>
+
+          <!-- Experimento 4 -->
+          <div class="lab-card">
+            <div class="lab-card-badge">Observación 04</div>
+            <h4>Tu Forma de Querer</h4>
+            <p class="lab-desc">Lo que más valoro de cómo eres conmigo:</p>
+            <div class="lab-finding">
+              <strong>Observación:</strong> No eres de las personas empalagosas ni necesitas estar diciendo cosas cursis todo el día, y eso me encanta. Cuando me demuestras cariño, sé que es completamente real.
+            </div>
+            <div class="lab-photo-stamp">
+              <img src="assets/fotos/gato_corazon_amor.jpg" alt="Amor sincero" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <div class="lab-verdict">
+          <div class="verdict-seal">APROBADA CON 10/10</div>
+          <p>
+            <strong>Conclusión final:</strong> Eres una persona increíble, inteligente y única. Veredicto: quedas contratada como mi persona favorita de forma indefinida.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         6. ZONA INTERACTIVA & MINIJUEGOS
+         ======================================================= -->
+    <section id="interactivo" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Capítulo 05</span>
+        <h2 class="section-heading">Zona Interactiva ✨</h2>
+        <p class="section-subtext">Un par de cosas para que te diviertas un rato.</p>
+      </div>
+
+      <div class="games-grid">
+        <!-- Minijuego A: Slider "¿Qué tanto me quieres? 👀" -->
+        <div class="game-card">
+          <div class="game-header">
+            <span class="game-icon">👀</span>
+            <h3>¿Qué tanto me quieres?</h3>
+          </div>
+          <p class="game-instruction">Mueve la barrita con sinceridad:</p>
+          
+          <div class="love-slider-wrapper">
+            <input type="range" id="love-slider" min="0" max="100" value="50" class="custom-slider">
+          </div>
+
+          <!-- Solo un emoji grande, sin texto -->
+          <div class="slider-emoji-display" id="slider-emoji">🙂</div>
+        </div>
+
+        <!-- Minijuego B: Dato Curioso -->
+        <div class="game-card">
+          <div class="game-header">
+            <span class="game-icon">💡</span>
+            <h3>Dato Curioso 👀</h3>
+          </div>
+          <p class="game-instruction">Toca el botón para ver un recuerdo o curiosidad de los dos:</p>
+          
+          <div class="trivia-display" id="trivia-box">
+            "Toca el botón para ver qué recuerdo sale..."
+          </div>
+
+          <button id="btn-trivia" class="btn-action">
+            <span>Ver otro recuerdo 🎲</span>
+          </button>
+        </div>
+
+        <!-- Minijuego C: Botón NO TOCAR -->
+        <div class="game-card danger-zone">
+          <div class="game-header">
+            <span class="game-icon">⚠️</span>
+            <h3>Zona Prohibida</h3>
+          </div>
+          <p class="game-instruction">Hay una sola regla en esta página: por favor, NO toques este botón.</p>
+          
+          <div class="danger-btn-wrap">
+            <button id="btn-no-tocar" class="btn-danger">
+              <span>⚠️ NO TOCAR ⚠️</span>
+            </button>
+          </div>
+          <div class="danger-hint">Bajo tu propio riesgo...</div>
+        </div>
+
+        <!-- Minijuego D: Buzón de Quejitas -->
+        <div class="game-card">
+          <div class="game-header">
+            <span class="game-icon">📝</span>
+            <h3>Buzón de Quejitas 😂</h3>
+          </div>
+          <p class="game-instruction">¿Tienes alguna queja sobre mí hoy? Escoge una opción:</p>
+          
+          <div class="complaint-actions">
+            <button id="btn-dejar-queja" class="btn-action btn-sm">Quiero dejar una quejita 😤</button>
+            <button id="btn-perdonar" class="btn-outline-custom btn-sm">Dejar pasar por esta vez 😇</button>
+          </div>
+
+          <div id="complaint-result" class="complaint-result-box hidden"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         7. ESPACIO PARA NOSOTROS (Creciendo Juntos)
+         ======================================================= -->
+    <section id="nosotros" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Capítulo 06</span>
+        <h2 class="section-heading">Construyendo lo Nuestro 🌱</h2>
+        <p class="section-subtext">Porque quererte también es querer que sigamos mejorando juntos.</p>
+      </div>
+
+      <div class="relationship-card">
+        <div class="washi-tape washi-center"></div>
+
+        <div class="relationship-intro">
+          <p>
+            Mariana, sé y entiendo que no eres una persona de andar diciendo cosas cursis todo el tiempo
+            ni de estar pegada demostrando afecto físico a cada rato. Y quiero que te quede súper claro:
+            <strong>respeto y quiero tu forma de ser</strong>. No pretendo que cambies ni que te sientas
+            presionada a hacer cosas que no te nazcan.
+          </p>
+          <p>
+            Al mismo tiempo, porque te quiero de verdad y me importa mucho lo que tenemos, hay cosas
+            simples que me encantaría que sigamos construyendo entre los dos:
+          </p>
+        </div>
+
+        <div class="wishes-list">
+          <div class="wish-item">
+            <div class="wish-bullet">⏳</div>
+            <div class="wish-text">
+              <strong>Pasar más tiempo juntos:</strong> Aunque tengamos días ocupados o con tareas, esos ratos simples compartiendo cualquier cosa valen un montón para mí.
+            </div>
+          </div>
+
+          <div class="wish-item">
+            <div class="wish-bullet">🗓️</div>
+            <div class="wish-text">
+              <strong>Sentirme más incluido en tus planes:</strong> Formar parte de tus días y saber que cuentas conmigo para tus cosas.
+            </div>
+          </div>
+
+          <div class="wish-item">
+            <div class="wish-bullet">✨</div>
+            <div class="wish-text">
+              <strong>Que también te nazca la iniciativa:</strong> Que de ti también salga ese mensaje espontáneo para hablar, para vernos o simplemente para saber cómo va el día.
+            </div>
+          </div>
+
+          <div class="wish-item">
+            <div class="wish-bullet">🤝</div>
+            <div class="wish-text">
+              <strong>Que puedas apoyarte en mí:</strong> Cuando tengas un día pesado, estés cansada o te sientas mal, saber que aquí estoy para escucharte o acompañarte en silencio si eso prefieres.
+            </div>
+          </div>
+
+          <div class="wish-item">
+            <div class="wish-bullet">💬</div>
+            <div class="wish-text">
+              <strong>Saber que algo te pasa:</strong> No tienes que contarme absolutamente todo con cada detalle si no quieres, pero sí saber que me tienes de tu lado cuando algo te preocupe.
+            </div>
+          </div>
+        </div>
+
+        <div class="relationship-summary">
+          <p>
+            <em>"Te quiero tal como eres, pero también quiero seguir construyendo esto contigo."</em>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         8. LA CARTA (Personal, íntima y sincera)
+         ======================================================= -->
+    <section id="carta" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Capítulo 07</span>
+        <h2 class="section-heading">Mi Carta para Ti 💌</h2>
+        <p class="section-subtext">Escrita con calma y con todo mi corazón.</p>
+      </div>
+
+      <div class="letter-container">
+        <div class="letter-envelope" id="envelope">
+          <div class="letter-paper">
+            <div class="letter-heading">
+              <span class="letter-to">Mariana,</span>
+              <span class="letter-date">Para ti ♡</span>
+            </div>
+
+            <div class="letter-content">
+              <p>
+                Quise escribirte esta carta con calma, porque a veces en el día a día no encuentro
+                las palabras exactas o el momento para decirte todo lo que significas para mí. Pero hoy
+                quiero que lo leas y te quede completamente claro:
+                <strong>te amo y te adoro con todo mi corazón</strong>.
+              </p>
+
+              <p>
+                Me pongo a pensar en cómo empezó todo, en ese trabajo de filosofía sobre el epicureísmo,
+                y me da risa y ternura a la vez. Quién iba a pensar que una tarea sobre la tranquilidad
+                y los placeres simples de la vida terminaría presentándome a alguien que se convertiría
+                en una de las personas más importantes para mí. Desde ahí no paramos de hablar: vinieron
+                las tardes jugando Roblox en <em>Roba un brainrot</em> y en <em>99 noches</em>, las risas
+                por cualquier tontería y las conversaciones que se fueron haciendo cada vez más nuestras.
+              </p>
+
+              <p>
+                Quiero darte las gracias de verdad. Gracias por escucharme, por aguantarme cuando me pongo
+                intenso o distraído, por reírte conmigo y por estar ahí tanto en los días buenos como en
+                los momentos en que las cosas no han sido fáciles. Me encanta cómo eres: tu calma, tu
+                inteligencia, tu forma de pensar y ese carácter tan tuyo que no cambia por nadie. Valoro
+                muchísimo tu espacio y la manera en que quieres; sé que no necesitas estar diciendo cosas
+                cursis a cada rato para demostrarme que te importo, y créeme que cada pequeño detalle
+                tuyo lo guardo con mucho cariño.
+              </p>
+
+              <p>
+                No busco una relación perfecta ni de fantasía. Sé que somos dos personas distintas
+                aprendiendo en el camino, y lo que más deseo es que sigamos intentándolo juntos: que podamos
+                hablar con total confianza de lo que sentimos, que disfrutemos de las cosas simples como
+                sentarnos a hablar o ver algo juntos, y que sigamos construyendo esto paso a paso.
+              </p>
+
+              <p>
+                Aquel día en la mecedora de tu sala fue solo el inicio de muchas cosas lindas que nos faltan
+                por vivir. Gracias por ser tú, por compartir tu tiempo conmigo y por hacerme tan feliz.
+              </p>
+
+              <p>
+                Te amo con todo mi corazón.
+              </p>
+            </div>
+
+            <div class="letter-photo-corner">
+              <img src="assets/fotos/gato_corazon_amor.jpg" alt="Con todo mi amor">
+              <span>Para ti ♡</span>
+            </div>
+
+            <div class="letter-signature">
+              <p>Con todo mi cariño,</p>
+              <div class="signature-name">Tu novio ♡</div>
+            </div>
+
+            <div class="letter-seal-action">
+              <button id="btn-seal" class="seal-btn" title="Tocar para enviar un abrazo virtual">
+                <span class="seal-icon">❤️</span>
+                <span class="seal-text">Sellar con un beso</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================
+       PANTALLA DE EMERGENCIA "NO TOCAR"
+       Pantalla en negro durante 5 segundos sin letras ni nada
+       ======================================================= -->
+  <div id="blackout-screen" class="blackout-overlay hidden"></div>
+
+  <!-- Modal / Diálogo para Quejitas Divertidas -->
+  <div id="modal-quejita" class="modal-overlay hidden">
+    <div class="modal-card">
+      <h3>Buzón de Quejitas ✍️</h3>
+      <p>Escribe tu queja con confianza, la voy a leer con atención:</p>
+      <textarea id="texto-quejita" placeholder="Ej: A veces eres muy distraído / No me avisaste..." rows="3"></textarea>
+      <div class="modal-buttons">
+        <button id="btn-enviar-quejita" class="btn-action">Enviar Queja</button>
+        <button id="btn-cerrar-modal" class="btn-outline-custom">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer-personal">
+    <div class="container footer-content">
+      <div class="footer-cats-row">
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+      </div>
+      <p class="footer-title">Hecho especialmente para Mariana</p>
+      <p class="footer-sub">
+        Con recuerdos reales, gatos y todo mi amor.
+      </p>
+      <p class="footer-copy">♡ Siempre tú y yo</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

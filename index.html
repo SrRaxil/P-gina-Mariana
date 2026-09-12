@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Para ti, Mariana ♡ | Nuestro Rincón Especial</title>
+  <meta name="description" content="Un rincón digital íntimo y especial para Mariana, con nuestros recuerdos, gaticos, risas y todo mi amor.">
+
+  <!-- Fuentes Tipográficas Google Fonts: Poppins (Lectura), Playfair Display (Elegancia), Sacramento & Caveat (Romance & Notas) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Sacramento&display=swap" rel="stylesheet">
+
+  <!-- Canvas Confetti CDN para celebraciones y microinteracciones -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-romantic">
+
+  <!-- Elementos de fondo ambiental dinámico (Glows difusos) -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-middle" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+
+  <!-- Barra de progreso superior -->
+  <div id="reading-progress" class="reading-progress-bar"></div>
+
+  <!-- Navegación Flotante con Glassmorphism -->
+  <nav class="journal-nav" id="main-nav">
+    <div class="nav-wrapper">
+      <a href="#portada" class="nav-brand">
+        <span class="nav-heart">♡</span> Mariana & Yo
+      </a>
+      <div class="nav-links">
+        <a href="#contador" class="nav-item">Tiempo ⏳</a>
+        <a href="#historia" class="nav-item">Recuerdos</a>
+        <a href="#lo-que-amo" class="nav-item">Lo que amo</a>
+        <a href="#gatos" class="nav-item">Gatos 🐈</a>
+        <a href="#ciencia" class="nav-item">Ciencia 🧪</a>
+        <a href="#interactivo" class="nav-item">Juegos ✨</a>
+        <a href="#nosotros" class="nav-item">Nosotros 🌱</a>
+        <a href="#propuesta" class="nav-item nav-item-proposal">Pregunta 💍</a>
+        <a href="#carta" class="nav-item nav-item-special">La Carta 💌</a>
+      </div>
+      <div class="nav-controls">
+        <button id="sound-toggle" class="control-btn" title="Sonido interactivo" aria-label="Alternar sonido">
+          <span class="sound-icon">🔊</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =======================================================
+       1. PORTADA / HERO (Estilo Dark Romantic & Glassmorphism)
+       ======================================================= -->
+  <header id="portada" class="hero-section">
+    <div class="hero-container">
+      <div class="scrapbook-cover glass-card">
+        <!-- Cinta washi tape luminiscente -->
+        <div class="washi-tape washi-top"></div>
+        
+        <div class="cover-badge">
+          <span>✦ Cuaderno personal hecho para ti ✦</span>
+        </div>
+
+        <h1 class="cover-title">
+          Para ti, <span class="highlight-name">Mariana</span>
+          <span class="title-heart">♡</span>
+        </h1>
+
+        <p class="cover-subtitle">
+          Hice este pequeño rincón para ti, para guardar nuestras cosas, reírnos un rato
+          y recordarte lo mucho que te quiero todos los días.
+        </p>
+
+        <div class="cover-sticker-row">
+          <span class="doodle-sticker" title="Filosofía">📜 Epicuro</span>
+          <span class="doodle-sticker" title="Roblox">🎮 99 Noches</span>
+          <span class="doodle-sticker" title="Miau">🐈 Gaticos</span>
+          <span class="doodle-sticker" title="100% Real">❤️ Para Mariana</span>
+        </div>
+
+        <!-- Polaroid Interactiva 3D Flip Card -->
+        <div class="hero-polaroid-wrap">
+          <div class="flip-card polaroid-flip-card" data-card-id="hero">
+            <div class="flip-card-inner">
+              <!-- Frente de la Polaroid -->
+              <div class="flip-card-front polaroid-frame">
+                <div class="washi-tape washi-mini"></div>
+                <div class="polaroid-img-wrapper">
+                  <img src="assets/fotos/foto_recuerdo_nosotros.jpg" alt="Nosotros ♡">
+                </div>
+                <div class="polaroid-caption">Nosotros ♡</div>
+                <div class="flip-hint-badge"><span>Toca para voltear ↺</span></div>
+              </div>
+              <!-- Reverso de la Polaroid con nota íntima -->
+              <div class="flip-card-back polaroid-back-card">
+                <div class="back-card-content">
+                  <span class="back-card-icon">✨</span>
+                  <h4 class="back-card-title">Nuestro Rincón</h4>
+                  <p class="back-card-note">
+                    "Tú y yo: mi rincón de paz favorito en el mundo entero. Gracias por cada sonrisa, por cada tarde juntos y por hacerme tan feliz todos los días."
+                  </p>
+                  <span class="back-card-sign">— Siempre contigo ♡</span>
+                  <span class="flip-return-hint">Toca para volver ↻</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cover-action">
+          <a href="#contador" class="btn-start" id="btn-empezar">
+            <span>Abrir nuestro diario ♡</span>
+            <span class="btn-arrow">↓</span>
+          </a>
+        </div>
+
+        <div class="cover-footer-note">
+          <p>Hecho a mano, con recuerdos reales y mucho cariño.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================
+         NUEVO: CONTADOR DE TIEMPO EN TIEMPO REAL
+         ======================================================= -->
+    <section id="contador" class="section-container counter-section">
+      <div class="section-header">
+        <span class="section-tag">Nuestros Tiempos</span>
+        <h2 class="section-heading">Cada Segundo a tu Lado Cuenta ⏳</h2>
+        <p class="section-subtext">El tiempo que llevamos construyendo nuestra historia, segundo a segundo.</p>
+      </div>
+
+      <div class="counters-duo-grid">
+        <!-- Contador 1: 26 de Septiembre de 2025 -->
+        <div class="counter-glass-panel glass-card">
+          <div class="counter-badge-header">
+            <span class="counter-dot"></span>
+            <span class="counter-since-label">Juntos desde el 26 de Septiembre de 2025</span>
+          </div>
+
+          <h3 class="counter-panel-title">Desde que todo se volvió real ♡</h3>
+          <p class="counter-panel-desc">Aquel día en la cancha donde comenzó nuestra historia.</p>
+
+          <div class="countdown-grid" id="timer-display-1">
+            <div class="timer-box">
+              <span class="timer-number" id="timer-days">0</span>
+              <span class="timer-label">Días</span>
+            </div>
+            <div class="timer-separator">:</div>
+            <div class="timer-box">
+              <span class="timer-number" id="timer-hours">00</span>
+              <span class="timer-label">Horas</span>
+            </div>
+            <div class="timer-separator">:</div>
+            <div class="timer-box">
+              <span class="timer-number" id="timer-minutes">00</span>
+              <span class="timer-label">Min</span>
+            </div>
+            <div class="timer-separator">:</div>
+            <div class="timer-box">
+              <span class="timer-number" id="timer-seconds">00</span>
+              <span class="timer-label">Seg</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contador 2: Volver a intentarlo (Sin el cuadrito superior de 6 de marzo) -->
+        <div class="counter-glass-panel glass-card counter-highlight-panel counter-no-top-badge">
+          <h3 class="counter-panel-title">Nuestra Segunda Oportunidad ✨</h3>
+          <p class="counter-panel-desc">Desde que te dije para volver a intentarlo juntos.</p>
+
+          <div class="countdown-grid" id="timer-display-2">
+            <div class="timer-box box-special">
+              <span class="timer-number" id="timer-days-2">0</span>
+              <span class="timer-label">Días</span>
+            </div>
+            <div class="timer-separator separator-special">:</div>
+            <div class="timer-box box-special">
+              <span class="timer-number" id="timer-hours-2">00</span>
+              <span class="timer-label">Horas</span>
+            </div>
+            <div class="timer-separator separator-special">:</div>
+            <div class="timer-box box-special">
+              <span class="timer-number" id="timer-minutes-2">00</span>
+              <span class="timer-label">Min</span>
+            </div>
+            <div class="timer-separator separator-special">:</div>
+            <div class="timer-box box-special">
+              <span class="timer-number" id="timer-seconds-2">00</span>
+              <span class="timer-label">Seg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="counter-footer-message">
+        <span class="sparkle-icon">✨</span>
+        <p>Y cada instante a tu lado sigue siendo mi momento favorito.</p>
+        <span class="sparkle-icon">✨</span>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         2. NUESTRA HISTORIA (Con Polaroids 3D Flip Cards)
+         ======================================================= -->
+    <!-- =======================================================
+         2. NUESTRA HISTORIA (Línea de Tiempo Narrativa y Personal)
+         ======================================================= -->
+    <section id="historia" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Capítulo 01 • Nuestra Historia</span>
+        <h2 class="section-heading">Nuestra Historia: Cada Paso, Cada Momento ♡</h2>
+        <p class="section-subtext">Así es como recuerdo que fueron pasando las cosas entre nosotros: los inicios, los días confusos y todo lo que hemos ido aprendiendo juntos. (Toca las fotos para ver detalles secretos)</p>
+      </div>
+
+      <div class="timeline-wrapper">
+
+        <!-- ==============================================
+             CAPÍTULO 1: El comienzo — una tarea de filosofía
+             ============================================== -->
+        <article class="timeline-entry left" data-chapter="1">
+          <div class="timeline-node" aria-label="Capítulo 1">
+            <span class="node-num">01</span>
+          </div>
+          <div class="tape-strip" aria-hidden="true"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta-row">
+              <span class="chapter-tag">Capítulo 01</span>
+              <span class="timeline-meta-sep">✦</span>
+              <span class="timeline-date-label">El Comienzo</span>
+            </div>
+
+            <h3 class="entry-title">El comienzo — una tarea de filosofía</h3>
+
+            <div class="entry-narrative">
+              <p class="entry-text">
+                Todo empezó de una manera bastante normal: una conversación relacionada con una tarea de filosofía sobre el epicureísmo.
+              </p>
+              <p class="entry-text">
+                Lo que en ese momento parecía simplemente una conversación por una tarea terminó siendo el comienzo de muchas más conversaciones contigo. Después empezamos a hablar de otras cosas y también terminamos jugando Roblox juntos, incluyendo juegos como <em>Roba un Brainrot</em> y <em>99 noches</em>.
+              </p>
+              <p class="entry-text highlight-thought">
+                Lo importante de esta etapa no es solamente cómo empezamos a hablar, sino que poco a poco dejó de ser solamente una conversación por una tarea y se convirtió en una forma de compartir tiempo juntos.
+              </p>
+            </div>
+
+            <!-- Elemento visual / decorativo -->
+            <div class="timeline-decor-block">
+              <div class="flip-card card-flip-container" data-card-id="filosofia">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front card-photo-attachment">
+                    <div class="washi-tape washi-mini"></div>
+                    <img src="assets/fotos/gato_filosofo_chocomilk.jpg" alt="Epicuro y chocomilk filosófico" loading="lazy">
+                    <div class="card-photo-caption">Epicuro y un vasito con chocomilk filosófico</div>
+                    <div class="flip-hint-badge"><span>Toca para voltear ↺</span></div>
+                  </div>
+                  <div class="flip-card-back polaroid-back-card">
+                    <div class="back-card-content">
+                      <h4 class="back-card-title">Secreto Filosófico</h4>
+                      <p class="back-card-note">
+                        "Quién diría que hablar sobre la tranquilidad según Epicuro terminaría siendo el inicio de tantas tardes riendo y compartiendo tiempo contigo."
+                      </p>
+                      <span class="back-card-sign">— El comienzo de todo ♡</span>
+                      <span class="flip-return-hint">Toca para volver ↻</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="decor-tags-row">
+                <span class="decor-pill">Epicureísmo</span>
+                <span class="decor-pill">Roba un Brainrot</span>
+                <span class="decor-pill">99 Noches</span>
+                <span class="decor-pill">Compartir tiempo</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==============================================
+             CAPÍTULO 2: El momento en que tuve que admitirlo — 26 de septiembre de 2025
+             ============================================== -->
+        <article class="timeline-entry right" data-chapter="2">
+          <div class="timeline-node" aria-label="Capítulo 2">
+            <span class="node-num">02</span>
+          </div>
+          <div class="tape-strip" aria-hidden="true"></div>
+          <div class="timeline-card glass-card highlight-card">
+            <div class="timeline-meta-row">
+              <span class="chapter-tag">Capítulo 02</span>
+              <span class="timeline-meta-sep">✦</span>
+              <span class="timeline-date-label">26 de Septiembre de 2025</span>
+            </div>
+
+            <h3 class="entry-title">El momento en que tuve que admitirlo</h3>
+
+            <div class="entry-narrative">
+              <p class="entry-text">
+                El 26 de septiembre de 2025 pasó algo que hizo que ya no pudiera esconder tan fácilmente lo que sentía.
+              </p>
+              <p class="entry-text">
+                Tus amigas me preguntaron si tú me gustabas y dije que sí. Después ellas nos llevaron a la cancha para que habláramos.
+              </p>
+              <p class="entry-text highlight-thought">
+                Ese momento fue importante porque, aunque todavía no sabía exactamente cómo iban a terminar las cosas, ya había algo que estaba empezando a tomar una forma más seria para mí.
+              </p>
+            </div>
+
+            <!-- Elemento visual / decorativo -->
+            <div class="timeline-decor-block">
+              <div class="flip-card card-flip-container" data-card-id="cancha">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front card-photo-attachment">
+                    <div class="washi-tape washi-mini"></div>
+                    <img src="assets/fotos/gato_sonrojado.webp" alt="Nervios en la cancha" loading="lazy">
+                    <div class="card-photo-caption">Yo con la cara roja de los nervios en la cancha</div>
+                    <div class="flip-hint-badge"><span>Toca para voltear ↺</span></div>
+                  </div>
+                  <div class="flip-card-back polaroid-back-card">
+                    <div class="back-card-content">
+                      <h4 class="back-card-title">Pura Sinceridad</h4>
+                      <p class="back-card-note">
+                        "El corazón me latía a mil por segundo y seguro tenía la cara roja como tomate, pero en ese momento supe que ya no podía fingir lo que sentía por ti."
+                      </p>
+                      <span class="back-card-sign">— Decir que sí ♡</span>
+                      <span class="flip-return-hint">Toca para volver ↻</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="decor-stamp">
+                <span class="stamp-text">26.09.2025 • Cuando las cosas tomaron forma seria</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==============================================
+             CAPÍTULO 3: Una historia que no fue completamente lineal
+             ============================================== -->
+        <article class="timeline-entry left" data-chapter="3">
+          <div class="timeline-node" aria-label="Capítulo 3">
+            <span class="node-num">03</span>
+          </div>
+          <div class="tape-strip" aria-hidden="true"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta-row">
+              <span class="chapter-tag">Capítulo 03</span>
+              <span class="timeline-meta-sep">✦</span>
+              <span class="timeline-date-label">Nuestra Realidad</span>
+            </div>
+
+            <h3 class="entry-title">Una historia que no fue completamente lineal</h3>
+
+            <div class="entry-narrative">
+              <p class="entry-text">
+                Después de eso las cosas no fueron simplemente de «nos gustamos y todo salió perfecto».
+              </p>
+              <p class="entry-text">
+                Hubo momentos de cercanía, conversaciones y también momentos en los que las cosas se sintieron más distantes entre nosotros.
+              </p>
+              <p class="entry-text highlight-thought">
+                No quiero presentar esta parte como si todo hubiera sido perfecto, porque no lo fue. Precisamente por eso esta historia es nuestra: hubo momentos buenos, momentos confusos y momentos en los que no sabíamos exactamente hacia dónde iban las cosas.
+              </p>
+            </div>
+
+            <!-- Elemento visual / decorativo -->
+            <div class="timeline-decor-block">
+              <div class="journal-quote-card">
+                <div class="quote-card-header">
+                  <span class="quote-title">Página del diario: Una historia real</span>
+                </div>
+                <p class="quote-card-body">
+                  “Nuestra historia no necesitó ser un camino recto ni perfecto. Sus pausas, sus dudas y sus momentos buenos son justo lo que la hacen verdadera y nuestra.”
+                </p>
+              </div>
+              <div class="decor-tags-row">
+                <span class="decor-pill">Momentos confusos</span>
+                <span class="decor-pill">Momentos buenos</span>
+                <span class="decor-pill">Nuestra propia historia</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==============================================
+             CAPÍTULO 4: Cuando volviste a acercarte — febrero de 2026
+             ============================================== -->
+        <article class="timeline-entry right" data-chapter="4">
+          <div class="timeline-node" aria-label="Capítulo 4">
+            <span class="node-num">04</span>
+          </div>
+          <div class="tape-strip" aria-hidden="true"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta-row">
+              <span class="chapter-tag">Capítulo 04</span>
+              <span class="timeline-meta-sep">✦</span>
+              <span class="timeline-date-label">Febrero de 2026</span>
+            </div>
+
+            <h3 class="entry-title">Cuando volviste a acercarte</h3>
+
+            <div class="entry-narrative">
+              <p class="entry-text">
+                En febrero de 2026 empezaste a acercarte más.
+              </p>
+              <p class="entry-text">
+                En ese momento volvió a salir el tema de aquella situación anterior y me preguntaste sobre la posibilidad de intentarlo otra vez.
+              </p>
+              <p class="entry-text highlight-thought">
+                Para mí fue importante porque significaba que aquello que había pasado antes no había desaparecido completamente. No era simplemente volver al punto donde habíamos quedado; era preguntarnos si esta vez podíamos hacer las cosas de otra manera.
+              </p>
+            </div>
+
+            <!-- Elemento visual / decorativo -->
+            <div class="timeline-decor-block">
+              <div class="flip-card card-flip-container" data-card-id="febrero">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front card-photo-attachment">
+                    <div class="washi-tape washi-mini"></div>
+                    <img src="assets/fotos/gato_sorprendido.webp" alt="Sorpresa bonita" loading="lazy">
+                    <div class="card-photo-caption">Mi cara cuando me volviste a sacar el tema</div>
+                    <div class="flip-hint-badge"><span>Toca para voltear ↺</span></div>
+                  </div>
+                  <div class="flip-card-back polaroid-back-card">
+                    <div class="back-card-content">
+                      <h4 class="back-card-title">Iniciativa Inolvidable</h4>
+                      <p class="back-card-note">
+                        "Verte acercarte y preguntarme sobre la posibilidad de intentarlo otra vez me demostró que lo que construimos seguía vivo."
+                      </p>
+                      <span class="back-card-sign">— Un nuevo comienzo ♡</span>
+                      <span class="flip-return-hint">Toca para volver ↻</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="decor-stamp">
+                <span class="stamp-text">Hacer las cosas de otra manera • Febrero 2026</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==============================================
+             CAPÍTULO 5: Esta vez fui yo quien lo preguntó — 6 de marzo de 2026
+             ============================================== -->
+        <article class="timeline-entry left" data-chapter="5">
+          <div class="timeline-node" aria-label="Capítulo 5">
+            <span class="node-num">05</span>
+          </div>
+          <div class="tape-strip" aria-hidden="true"></div>
+          <div class="timeline-card glass-card highlight-card">
+            <div class="timeline-meta-row">
+              <span class="chapter-tag">Capítulo 05</span>
+              <span class="timeline-meta-sep">✦</span>
+              <span class="timeline-date-label">6 de Marzo de 2026</span>
+            </div>
+
+            <h3 class="entry-title">Esta vez fui yo quien lo preguntó</h3>
+
+            <div class="entry-narrative">
+              <p class="entry-text">
+                El 6 de marzo de 2026 fui yo quien te preguntó si podíamos intentarlo otra vez.
+              </p>
+              <p class="entry-text">
+                Esta vez no quería quedarme simplemente esperando a ver qué pasaba.
+              </p>
+              <p class="entry-text highlight-thought">
+                Quería intentarlo porque tú ya te habías convertido en alguien demasiado importante para mí como para fingir que no me importaba lo que pudiera pasar entre nosotros.
+              </p>
+            </div>
+
+            <!-- Elemento visual / decorativo -->
+            <div class="timeline-decor-block">
+              <div class="journal-letter-snip">
+                <div class="letter-snip-stamp">
+                  <span class="snip-date">06 / 03 / 2026 — 4:00 PM</span>
+                </div>
+                <p class="letter-snip-text">
+                  “Tomar la iniciativa fue la decisión más sincera que pude haber tomado. No quería quedarme de brazos cruzados por alguien que ya era tan importante para mí como tú.”
+                </p>
+                <div class="timeline-heart-badge">
+                  <span>Decidido a intentarlo juntos ♡</span>
+                </div>
+              </div>
+              <div class="decor-tags-row">
+                <span class="decor-pill">Iniciativa</span>
+                <span class="decor-pill">Alguien demasiado importante</span>
+                <span class="decor-pill">Intentarlo de verdad</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==============================================
+             CAPÍTULO 6: Nuestro primer beso — finales de abril / comienzos de mayo de 2026
+             ============================================== -->
+        <article class="timeline-entry right" data-chapter="6">
+          <div class="timeline-node" aria-label="Capítulo 6">
+            <span class="node-num">06</span>
+          </div>
+          <div class="tape-strip" aria-hidden="true"></div>
+          <div class="timeline-card glass-card polaroid-style">
+            <div class="timeline-meta-row">
+              <span class="chapter-tag">Capítulo 06</span>
+              <span class="timeline-meta-sep">✦</span>
+              <span class="timeline-date-label">Finales de Abril / Comienzos de Mayo de 2026</span>
+            </div>
+
+            <h3 class="entry-title">Nuestro primer beso — en la mecedora</h3>
+
+            <div class="entry-narrative">
+              <p class="entry-text">
+                Nuestro primer beso fue en tu casa. Estábamos en la sala, en una mecedora, y finalmente pasó.
+              </p>
+              <p class="entry-text">
+                Fue un momento que recuerdo con bastante cariño. Me sentí bien, aunque después pensé que mi reacción pudo haber sido diferente y que me hubiera gustado reaccionar de otra manera. Incluso me quedé con ganas de repetir ese momento.
+              </p>
+              <p class="entry-text highlight-thought">
+                Más que hacerlo parecer una escena perfecta de película, quiero que se sienta como lo que realmente fue: un momento sencillo, un poco nervioso y especial precisamente porque era nuestro primer beso.
+              </p>
+            </div>
+
+            <!-- Elemento visual / decorativo -->
+            <div class="timeline-decor-block">
+              <div class="flip-card card-flip-container" data-card-id="mecedora">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front card-photo-attachment">
+                    <div class="washi-tape washi-mini"></div>
+                    <img src="assets/fotos/foto_recuerdo_nosotros.jpg" alt="Un momento especial" loading="lazy">
+                    <div class="card-photo-caption">En la mecedora: un recuerdo guardado con cariño</div>
+                    <div class="flip-hint-badge"><span>Toca para voltear ↺</span></div>
+                  </div>
+                  <div class="flip-card-back polaroid-back-card">
+                    <div class="back-card-content">
+                      <h4 class="back-card-title">Primer Beso</h4>
+                      <p class="back-card-note">
+                        "Un momento sencillo, con nervios reales y en la mecedora de tu sala. Ese primer beso siempre tendrá un lugar especial en mí."
+                      </p>
+                      <span class="back-card-sign">— Inolvidable para mí ♡</span>
+                      <span class="flip-return-hint">Toca para volver ↻</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="decor-stamp">
+                <span class="stamp-text">Sencillo, nervioso y especial • En la mecedora</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==============================================
+             CAPÍTULO 7: Aprender a querer de una manera diferente
+             ============================================== -->
+        <article class="timeline-entry left" data-chapter="7">
+          <div class="timeline-node" aria-label="Capítulo 7">
+            <span class="node-num">07</span>
+          </div>
+          <div class="tape-strip" aria-hidden="true"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta-row">
+              <span class="chapter-tag">Capítulo 07</span>
+              <span class="timeline-meta-sep">✦</span>
+              <span class="timeline-date-label">Comprender y Querer</span>
+            </div>
+
+            <h3 class="entry-title">Aprender a querer de una manera diferente</h3>
+
+            <div class="entry-narrative">
+              <p class="entry-text">
+                Con el tiempo también he aprendido que demuestras cariño de una manera diferente a la mía.
+              </p>
+              <p class="entry-text">
+                No eres una persona extremadamente cariñosa ni demasiado abierta para expresar todo lo que sientes, y eso es algo que he ido entendiendo.
+              </p>
+              <p class="entry-text highlight-thought">
+                No quiero que esta parte parezca una crítica. Al contrario: quiero mostrarte que también he tenido que aprender a entender tu forma de querer. Sé que no necesito que seas igual que yo para que lo que tenemos sea importante.
+              </p>
+            </div>
+
+            <!-- Elemento visual / decorativo -->
+            <div class="timeline-decor-block">
+              <div class="journal-insight-card">
+                <div class="insight-header">
+                  <span class="insight-label">Nota de comprensión personal</span>
+                </div>
+                <p class="insight-text">
+                  “Cada quien tiene su propia forma de entregar cariño. No necesito que te expreses exactamente como yo para valorar con todo el corazón lo que tenemos.”
+                </p>
+                <div class="insight-tags">
+                  <span class="decor-pill">Aprender a entenderte</span>
+                  <span class="decor-pill">Tu forma de querer</span>
+                  <span class="decor-pill">Lo que tenemos importa</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==============================================
+             CAPÍTULO 8: Los pequeños momentos también cuentan
+             ============================================== -->
+        <article class="timeline-entry right" data-chapter="8">
+          <div class="timeline-node" aria-label="Capítulo 8">
+            <span class="node-num">08</span>
+          </div>
+          <div class="tape-strip" aria-hidden="true"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta-row">
+              <span class="chapter-tag">Capítulo 08</span>
+              <span class="timeline-meta-sep">✦</span>
+              <span class="timeline-date-label">Los Pequeños Momentos</span>
+            </div>
+
+            <h3 class="entry-title">Los pequeños momentos también cuentan</h3>
+
+            <div class="entry-narrative">
+              <p class="entry-text">
+                Nuestra historia no está formada solamente por los momentos grandes.
+              </p>
+              <p class="entry-text">
+                También están las conversaciones, los juegos, las risas, los momentos buenos y los momentos difíciles. Muchas veces son precisamente esas cosas pequeñas las que terminan haciendo que te vuelvas tan importante para mí.
+              </p>
+              <p class="entry-text highlight-thought">
+                Por eso no necesito que cada momento sea extraordinario; lo que quiero es seguir teniendo esos momentos sencillos contigo.
+              </p>
+            </div>
+
+            <!-- Elemento visual / decorativo -->
+            <div class="timeline-decor-block">
+              <div class="flip-card card-flip-container" data-card-id="momentos-pequenos">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front card-photo-attachment">
+                    <div class="washi-tape washi-mini"></div>
+                    <img src="assets/fotos/gato_shaka_buenavibra.jpg" alt="Momentos cotidianos y risas" loading="lazy">
+                    <div class="card-photo-caption">Modo buena vibra: risas y momentos sencillos</div>
+                    <div class="flip-hint-badge"><span>Toca para voltear ↺</span></div>
+                  </div>
+                  <div class="flip-card-back polaroid-back-card">
+                    <div class="back-card-content">
+                      <h4 class="back-card-title">Cosas Pequeñas</h4>
+                      <p class="back-card-note">
+                        "No hace falta que cada momento sea de película. Una charla sencilla o reírnos juntos es más que suficiente para mí."
+                      </p>
+                      <span class="back-card-sign">— Momentos sencillos ♡</span>
+                      <span class="flip-return-hint">Toca para volver ↻</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="decor-tags-row">
+                <span class="decor-pill">Conversaciones</span>
+                <span class="decor-pill">Juegos y risas</span>
+                <span class="decor-pill">Momentos difíciles</span>
+                <span class="decor-pill">Momentos buenos</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==============================================
+             CAPÍTULO 9: Lo que todavía estoy aprendiendo
+             ============================================== -->
+        <article class="timeline-entry left" data-chapter="9">
+          <div class="timeline-node" aria-label="Capítulo 9">
+            <span class="node-num">09</span>
+          </div>
+          <div class="tape-strip" aria-hidden="true"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta-row">
+              <span class="chapter-tag">Capítulo 09</span>
+              <span class="timeline-meta-sep">✦</span>
+              <span class="timeline-date-label">Aprendiendo Juntos</span>
+            </div>
+
+            <h3 class="entry-title">Lo que todavía estoy aprendiendo</h3>
+
+            <div class="entry-narrative">
+              <p class="entry-text">
+                También quiero ser sincero con algo: todavía estoy aprendiendo cómo llevar nuestra relación.
+              </p>
+              <p class="entry-text">
+                Hay cosas que me gustaría que fueran diferentes, como pasar más tiempo juntos, sentir que también soy incluido en algunos planes y que exista más iniciativa de los dos lados.
+              </p>
+              <p class="entry-text highlight-thought">
+                Pero no quiero que esto se convierta en una lista de reclamos. Quiero mostrártelo como parte de nuestra historia actual: estoy aprendiendo a comunicar lo que necesito, a entenderte y a encontrar un equilibrio entre lo que tú eres y lo que yo necesito.
+              </p>
+            </div>
+
+            <!-- Elemento visual / decorativo -->
+            <div class="timeline-decor-block">
+              <div class="journal-sprout-card">
+                <div class="sprout-header">
+                  <span class="sprout-title">Sinceridad & Crecimiento</span>
+                </div>
+                <p class="sprout-body">
+                  “Aprender a comunicar lo que necesito, a entenderte mejor y a buscar juntos ese equilibrio donde los dos podamos sentirnos cuidados.”
+                </p>
+                <div class="sprout-footer">
+                  <span class="decor-pill">Más tiempo juntos</span>
+                  <span class="decor-pill">Comunicación</span>
+                  <span class="decor-pill">Equilibrio mutuo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==============================================
+             CAPÍTULO 10: La historia todavía se está escribiendo
+             ============================================== -->
+        <article class="timeline-entry right" data-chapter="10">
+          <div class="timeline-node" aria-label="Capítulo 10">
+            <span class="node-num">10</span>
+          </div>
+          <div class="tape-strip" aria-hidden="true"></div>
+          <div class="timeline-card glass-card highlight-card">
+            <div class="timeline-meta-row">
+              <span class="chapter-tag">Capítulo 10</span>
+              <span class="timeline-meta-sep">✦</span>
+              <span class="timeline-date-label">El Futuro que Queremos</span>
+            </div>
+
+            <h3 class="entry-title">La historia todavía se está escribiendo</h3>
+
+            <div class="entry-narrative">
+              <p class="entry-text">
+                Y esta es probablemente la parte más importante. Nuestra historia todavía no terminó.
+              </p>
+              <p class="entry-text">
+                No sé exactamente qué momentos vendrán después, pero sí sé que quiero seguir creando recuerdos contigo. Quiero que sigamos teniendo conversaciones, juegos, risas, momentos tranquilos y también aprendiendo de los momentos difíciles.
+              </p>
+              <p class="entry-text">
+                No quiero prometerte una relación perfecta porque sé que eso no existe. Lo que sí quiero es seguir intentándolo, seguir comunicándonos y seguir construyendo lo que tenemos.
+              </p>
+              <p class="entry-text highlight-thought finale-text">
+                Porque, después de todo lo que ha pasado desde aquella primera conversación por una tarea de filosofía, me gusta pensar que todavía nos quedan muchas páginas por escribir juntos.
+              </p>
+            </div>
+
+            <!-- Elemento visual / decorativo -->
+            <div class="timeline-decor-block">
+              <div class="journal-book-card">
+                <div class="book-spine-glow"></div>
+                <div class="book-card-content">
+                  <h4 class="book-title">Nuestra historia continúa...</h4>
+                  <p class="book-phrase">
+                    “Desde aquella primera conversación por una tarea de filosofía hasta el día de hoy... nos quedan muchas páginas por escribir juntos.”
+                  </p>
+                  <div class="timeline-heart-badge">
+                    <span>Escribiendo nuestro camino juntos ♡</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Conector / Puente visual hacia la siguiente sección -->
+      <div class="timeline-footer-bridge">
+        <span class="bridge-arrow">↓</span>
+        <p class="bridge-text">Y aún hay mucho más en nuestro cuaderno especial...</p>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         3. LO QUE AMO DE TI (Tablón de notas Dark Romantic)
+         ======================================================= -->
+    <section id="lo-que-amo" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Capítulo 02</span>
+        <h2 class="section-heading">Lo que Amo de Ti</h2>
+        <p class="section-subtext">Cosas tuyas que me encantan todos los días.</p>
+      </div>
+
+      <div class="sticky-notes-grid">
+        <!-- Nota 1: Ojos -->
+        <div class="sticky-note note-yellow">
+          <div class="pin"></div>
+          <div class="note-icon">👀</div>
+          <h3 class="note-title">Tus Ojos</h3>
+          <p class="note-body">
+            Tienen una mirada súper bonita y profunda. Me encanta cuando me miras directo a los ojos, aunque a veces me ponga nervioso.
+          </p>
+        </div>
+
+        <!-- Nota 2: Cara -->
+        <div class="sticky-note note-pink">
+          <div class="pin"></div>
+          <div class="note-icon">✨</div>
+          <h3 class="note-title">Tu Cara</h3>
+          <p class="note-body">
+            Me fascina verte, tus gestos cuando te ríes, cuando te quedas pensando o cuando me haces muecas graciosas.
+          </p>
+        </div>
+
+        <!-- Nota 3: Cabello Suelto -->
+        <div class="sticky-note note-peach">
+          <div class="pin"></div>
+          <div class="note-icon">🌸</div>
+          <h3 class="note-title">Tu Cabello Suelto</h3>
+          <p class="note-body">
+            Cuando lo llevas suelto te ves demasiado hermosa. No hay forma de que no me quede embobado mirándote.
+          </p>
+        </div>
+
+        <!-- Nota 4: Carácter -->
+        <div class="sticky-note note-green">
+          <div class="pin"></div>
+          <div class="note-icon">🛡️</div>
+          <h3 class="note-title">Tu Carácter</h3>
+          <p class="note-body">
+            Eres firme, clara y muy auténtica. No finges nada para complacer a nadie y eso lo valoro un montón.
+          </p>
+        </div>
+
+        <!-- Nota 5: Forma de pensar -->
+        <div class="sticky-note note-blue">
+          <div class="pin"></div>
+          <div class="note-icon">🧠</div>
+          <h3 class="note-title">Tu Forma de Pensar</h3>
+          <p class="note-body">
+            Tu madurez, la manera en que analizas las cosas y cómo ves la vida. Hablar contigo siempre me enseña algo.
+          </p>
+        </div>
+
+        <!-- Nota 6: Manera de ser -->
+        <div class="sticky-note note-purple">
+          <div class="pin"></div>
+          <div class="note-icon">🌿</div>
+          <h3 class="note-title">Tu Manera de Ser</h3>
+          <p class="note-body">
+            Tu calma, tu espacio propio y cómo eres conmigo cuando estamos los dos. Te quiero exactamente tal y como eres.
+          </p>
+        </div>
+
+        <!-- Nota 7: Capacidad -->
+        <div class="sticky-note note-yellow">
+          <div class="pin"></div>
+          <div class="note-icon">💡</div>
+          <h3 class="note-title">Tu Gran Capacidad</h3>
+          <p class="note-body">
+            Eres una persona demasiado inteligente y lista. Reto que te pones en frente, reto que sacas adelante.
+          </p>
+        </div>
+
+        <!-- Nota 8: Determinación -->
+        <div class="sticky-note note-pink">
+          <div class="pin"></div>
+          <div class="note-icon">🔥</div>
+          <h3 class="note-title">Tu Determinación</h3>
+          <p class="note-body">
+            Cuando te propones algo no te frena nada ni nadie. Tienes una fuerza de voluntad que admiro muchísimo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         4. EXPEDIENTE GATUNO (Imágenes reales de gatos)
+         ======================================================= -->
+    <section id="gatos" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Capítulo 03</span>
+        <h2 class="section-heading">Nuestros Gaticos 🐈</h2>
+        <p class="section-subtext">
+          Toca a cada gatico para escuchar su maullido y ver qué tiene que decirte.
+        </p>
+      </div>
+
+      <div class="cat-dossier-grid">
+        <!-- Gato 1 -->
+        <div class="cat-dossier-card glass-card" data-cat="1">
+          <div class="cat-photo-frame">
+            <img src="assets/fotos/gato_filosofo_chocomilk.jpg" alt="Gatico 1" class="cat-img" onerror="this.classList.add('img-failed')">
+            <div class="cat-fallback">
+              <span class="fallback-icon">🐱</span>
+              <span class="fallback-text">Gatico 1</span>
+            </div>
+          </div>
+          <div class="cat-info">
+            <div class="cat-codename">El filósofo del chocomilk</div>
+            <p class="cat-desc">Siempre mira con cara de estar juzgando con seriedad, pero en el fondo solo quiere comida y cariño.</p>
+            <div class="cat-interactive-bubble" id="bubble-cat-1">
+              "Tócame para ver qué opino..."
+            </div>
+          </div>
+        </div>
+
+        <!-- Gato 2 -->
+        <div class="cat-dossier-card glass-card" data-cat="2">
+          <div class="cat-photo-frame">
+            <img src="assets/fotos/gato_sorprendido.webp" alt="Gatico 2" class="cat-img" onerror="this.classList.add('img-failed')">
+            <div class="cat-fallback">
+              <span class="fallback-icon">😺</span>
+              <span class="fallback-text">Gatico 2</span>
+            </div>
+          </div>
+          <div class="cat-info">
+            <div class="cat-codename">El sorprendido del bosque</div>
+            <p class="cat-desc">Su pasión número uno es meterse entre las cobijas o asombrarse de cualquier cosa pequeña.</p>
+            <div class="cat-interactive-bubble" id="bubble-cat-2">
+              "Tócame para despertarme..."
+            </div>
+          </div>
+        </div>
+
+        <!-- Gato 3 -->
+        <div class="cat-dossier-card glass-card" data-cat="3">
+          <div class="cat-photo-frame">
+            <img src="assets/fotos/gato_sonrojado.webp" alt="Gatico 3" class="cat-img" onerror="this.classList.add('img-failed')">
+            <div class="cat-fallback">
+              <span class="fallback-icon">😸</span>
+              <span class="fallback-text">Gatico 3</span>
+            </div>
+          </div>
+          <div class="cat-info">
+            <div class="cat-codename">El tímido sonrojado</div>
+            <p class="cat-desc">Pone cara de pena con mejillas rosadas cuando le dicen cosas bonitas.</p>
+            <div class="cat-interactive-bubble" id="bubble-cat-3">
+              "Tócame si te atreves..."
+            </div>
+          </div>
+        </div>
+
+        <!-- Gato 4 -->
+        <div class="cat-dossier-card glass-card" data-cat="4">
+          <div class="cat-photo-frame">
+            <img src="assets/fotos/gato_ojitos_tiernos.webp" alt="Gatico 4" class="cat-img" onerror="this.classList.add('img-failed')">
+            <div class="cat-fallback">
+              <span class="fallback-icon">🦁</span>
+              <span class="fallback-text">Gatico 4</span>
+            </div>
+          </div>
+          <div class="cat-info">
+            <div class="cat-codename">El de los ojos tiernos</div>
+            <p class="cat-desc">Mira con esos ojos redondos e inocentes y ya con eso consigue que le hagan caso en todo.</p>
+            <div class="cat-interactive-bubble" id="bubble-cat-4">
+              "Tócame para recibir ronroneos..."
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         5. ESTUDIO CIENTÍFICO SOBRE MARIANA 🧪
+         ======================================================= -->
+    <section id="ciencia" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Capítulo 04</span>
+        <h2 class="section-heading">Mi Estudio Científico sobre Ti 🧪</h2>
+        <p class="section-subtext">
+          Mis observaciones totalmente serias (bueno, no tanto) después de pasar tiempo contigo.
+        </p>
+      </div>
+
+      <div class="lab-paper glass-card">
+        <div class="lab-header">
+          <div class="lab-title">LABORATORIO DE OBSERVACIÓN DE MARIANA</div>
+          <div class="lab-meta">Resultados 100% reales recopilados por mí</div>
+        </div>
+
+        <div class="lab-grid">
+          <!-- Experimento 1 -->
+          <div class="lab-card glass-subcard">
+            <div class="lab-card-badge">Observación 01</div>
+            <h4>El Efecto de tu Cabello Suelto</h4>
+            <p class="lab-desc">
+              Mi ritmo cardíaco cuando te recoges el cabello vs cuando te lo sueltas:
+            </p>
+            <div class="chart-box">
+              <div class="chart-row">
+                <span class="chart-label">Cabello recogido:</span>
+                <div class="bar-container"><div class="bar bar-normal" style="width: 50%;">75 bpm (Tranquilo)</div></div>
+              </div>
+              <div class="chart-row">
+                <span class="chart-label">Cabello suelto:</span>
+                <div class="bar-container"><div class="bar bar-high" style="width: 95%;">160 bpm (Me reinicio) ⚡</div></div>
+              </div>
+            </div>
+            <div class="lab-finding">
+              <strong>Conclusión:</strong> Verte con el cabello suelto me deja sin palabras cada vez.
+            </div>
+          </div>
+
+          <!-- Experimento 2 -->
+          <div class="lab-card glass-subcard">
+            <div class="lab-card-badge">Observación 02</div>
+            <h4>Tu Personalidad</h4>
+            <p class="lab-desc">De qué estás hecha según mis cálculos:</p>
+            <div class="donut-visual">
+              <div class="comp-item"><span class="color-dot c1"></span> <strong>50%</strong> Determinación pura</div>
+              <div class="comp-item"><span class="color-dot c2"></span> <strong>30%</strong> Inteligencia y sentido común</div>
+              <div class="comp-item"><span class="color-dot c3"></span> <strong>15%</strong> Cara bonita cuando te ríes</div>
+              <div class="comp-item"><span class="color-dot c4"></span> <strong>5%</strong> Paciencia para aguantar mis bobadas</div>
+            </div>
+            <div class="lab-finding">
+              <strong>Conclusión:</strong> La combinación exacta para hacerme muy feliz.
+            </div>
+          </div>
+
+          <!-- Experimento 3 -->
+          <div class="lab-card glass-subcard">
+            <div class="lab-card-badge">Observación 03</div>
+            <h4>Nuestras Partidas de Roblox</h4>
+            <p class="lab-desc">Haciendo equipo en "99 Noches" y en "Roba un brainrot":</p>
+            <div class="lab-data-point glass-subcard">
+              <span class="data-val">100%</span>
+              <span class="data-lbl">Risas garantizadas en cada partida</span>
+            </div>
+            <div class="lab-finding">
+              <strong>Conclusión:</strong> Aunque a veces perdamos, jugar contigo siempre vale la pena.
+            </div>
+          </div>
+
+          <!-- Experimento 4 -->
+          <div class="lab-card glass-subcard">
+            <div class="lab-card-badge">Observación 04</div>
+            <h4>Tu Forma de Querer</h4>
+            <p class="lab-desc">Lo que más valoro de cómo eres conmigo:</p>
+            <div class="lab-finding">
+              <strong>Observación:</strong> No eres de las personas empalagosas ni necesitas estar diciendo cosas cursis todo el día, y eso me encanta. Cuando me demuestras cariño, sé que es completamente real.
+            </div>
+            <div class="lab-photo-stamp">
+              <img src="assets/fotos/gato_corazon_amor.jpg" alt="Amor sincero" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <div class="lab-verdict">
+          <div class="verdict-seal">APROBADA CON 10/10</div>
+          <p>
+            <strong>Conclusión final:</strong> Eres una persona increíble, inteligente y única. Veredicto: quedas contratada como mi persona favorita de forma indefinida.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         6. ZONA INTERACTIVA & MINIJUEGOS
+         ======================================================= -->
+    <section id="interactivo" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Capítulo 05</span>
+        <h2 class="section-heading">Zona Interactiva ✨</h2>
+        <p class="section-subtext">Un par de cosas para que te diviertas un rato.</p>
+      </div>
+
+      <div class="games-grid">
+        <!-- Minijuego A: Slider "¿Qué tanto me quieres? 👀" -->
+        <div class="game-card glass-card">
+          <div class="game-header">
+            <span class="game-icon">👀</span>
+            <h3>¿Qué tanto me quieres?</h3>
+          </div>
+          <p class="game-instruction">Mueve la barrita con sinceridad:</p>
+          
+          <div class="love-slider-wrapper">
+            <input type="range" id="love-slider" min="0" max="100" value="50" class="custom-slider">
+          </div>
+
+          <!-- Emoji grande reactivo -->
+          <div class="slider-emoji-display" id="slider-emoji">🙂</div>
+        </div>
+
+        <!-- Minijuego B: Dato Curioso -->
+        <div class="game-card glass-card">
+          <div class="game-header">
+            <span class="game-icon">💡</span>
+            <h3>Dato Curioso 👀</h3>
+          </div>
+          <p class="game-instruction">Toca el botón para ver un recuerdo o curiosidad de los dos:</p>
+          
+          <div class="trivia-display" id="trivia-box">
+            "Toca el botón para ver qué recuerdo sale..."
+          </div>
+
+          <button id="btn-trivia" class="btn-action">
+            <span>Ver otro recuerdo 🎲</span>
+          </button>
+        </div>
+
+        <!-- Minijuego C: Botón NO TOCAR -->
+        <div class="game-card glass-card danger-zone">
+          <div class="game-header">
+            <span class="game-icon">⚠️</span>
+            <h3>Zona Prohibida</h3>
+          </div>
+          <p class="game-instruction">Hay una sola regla en esta página: por favor, NO toques este botón.</p>
+          
+          <div class="danger-btn-wrap">
+            <button id="btn-no-tocar" class="btn-danger">
+              <span>⚠️ NO TOCAR ⚠️</span>
+            </button>
+          </div>
+          <div class="danger-hint">Bajo tu propio riesgo...</div>
+        </div>
+
+        <!-- Minijuego D: Buzón de Quejitas -->
+        <div class="game-card glass-card">
+          <div class="game-header">
+            <span class="game-icon">📝</span>
+            <h3>Buzón de Quejitas 😂</h3>
+          </div>
+          <p class="game-instruction">¿Tienes alguna queja sobre mí hoy? Escoge una opción:</p>
+          
+          <div class="complaint-actions">
+            <button id="btn-dejar-queja" class="btn-action btn-sm">Quiero dejar una quejita 😤</button>
+            <button id="btn-perdonar" class="btn-outline-custom btn-sm">Dejar pasar por esta vez 😇</button>
+          </div>
+
+          <div id="complaint-result" class="complaint-result-box hidden"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         7. ESPACIO PARA NOSOTROS (Creciendo Juntos)
+         ======================================================= -->
+    <section id="nosotros" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Capítulo 06</span>
+        <h2 class="section-heading">Construyendo lo Nuestro 🌱</h2>
+        <p class="section-subtext">Porque quererte también es querer que sigamos mejorando juntos.</p>
+      </div>
+
+      <div class="relationship-card glass-card">
+        <div class="washi-tape washi-center"></div>
+
+        <div class="relationship-intro">
+          <p>
+            Mariana, sé y entiendo que no eres una persona de andar diciendo cosas cursis todo el tiempo
+            ni de estar pegada demostrando afecto físico a cada rato. Y quiero que te quede súper claro:
+            <strong>respeto y quiero tu forma de ser</strong>. No pretendo que cambies ni que te sientas
+            presionada a hacer cosas que no te nazcan.
+          </p>
+          <p>
+            Al mismo tiempo, porque te quiero de verdad y me importa mucho lo que tenemos, hay cosas
+            simples que me encantaría que sigamos construyendo entre los dos:
+          </p>
+        </div>
+
+        <div class="wishes-list">
+          <div class="wish-item glass-subcard">
+            <div class="wish-bullet">⏳</div>
+            <div class="wish-text">
+              <strong>Pasar más tiempo juntos:</strong> Aunque tengamos días ocupados o con tareas, esos ratos simples compartiendo cualquier cosa valen un montón para mí.
+            </div>
+          </div>
+
+          <div class="wish-item glass-subcard">
+            <div class="wish-bullet">🗓️</div>
+            <div class="wish-text">
+              <strong>Sentirme más incluido en tus planes:</strong> Formar parte de tus días y saber que cuentas conmigo para tus cosas.
+            </div>
+          </div>
+
+          <div class="wish-item glass-subcard">
+            <div class="wish-bullet">✨</div>
+            <div class="wish-text">
+              <strong>Que también te nazca la iniciativa:</strong> Que de ti también salga ese mensaje espontáneo para hablar, para vernos o simplemente para saber cómo va el día.
+            </div>
+          </div>
+
+          <div class="wish-item glass-subcard">
+            <div class="wish-bullet">🤝</div>
+            <div class="wish-text">
+              <strong>Que puedas apoyarte en mí:</strong> Cuando tengas un día pesado, estés cansada o te sientas mal, saber que aquí estoy para escucharte o acompañarte en silencio si eso prefieres.
+            </div>
+          </div>
+
+          <div class="wish-item glass-subcard">
+            <div class="wish-bullet">💬</div>
+            <div class="wish-text">
+              <strong>Saber que algo te pasa:</strong> No tienes que contarme absolutamente todo con cada detalle si no quieres, pero sí saber que me tienes de tu lado cuando algo te preocupe.
+            </div>
+          </div>
+        </div>
+
+        <div class="relationship-summary">
+          <p>
+            <em>"Te quiero tal como eres, pero también quiero seguir construyendo esto contigo."</em>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         NUEVO: LA GRAN PREGUNTA (Mecánica Botón "No" Esquivo)
+         ======================================================= -->
+    <section id="propuesta" class="section-container proposal-section">
+      <div class="section-header">
+        <span class="section-tag section-tag-special">Momento Especial</span>
+        <h2 class="section-heading">Una Pregunta Para Ti... 💍♡</h2>
+        <p class="section-subtext">Prometo que no hay trampas (bueno, tal vez una muy chiquita 🤭)</p>
+      </div>
+
+      <div class="proposal-card glass-card">
+        <div class="proposal-badge">
+          <span>Solo para Mariana ♡</span>
+        </div>
+
+        <h3 class="proposal-question">
+          Mariana, ¿aceptas seguir escribiendo esta historia conmigo y ser mi persona favorita por mucho tiempo más?
+        </h3>
+        <p class="proposal-hint">
+          Piénsalo bien antes de tocar cualquier botón... 😉
+        </p>
+
+        <!-- Arena interactiva para los botones -->
+        <div class="proposal-arena" id="proposal-arena">
+          <button id="btn-yes" class="btn-proposal-yes">
+            <span class="btn-yes-heart">♡</span> ¡Sí, claro que sí! <span class="btn-yes-heart">♡</span>
+          </button>
+          
+          <button id="btn-no" class="btn-proposal-no">
+            No...
+          </button>
+        </div>
+
+        <div class="proposal-attempts-hint" id="proposal-hint-text">
+          <span>Intenta decir que no a ver qué pasa... 😂</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         8. LA CARTA (Personal, íntima y sincera)
+         ======================================================= -->
+    <section id="carta" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Capítulo 07</span>
+        <h2 class="section-heading">Mi Carta para Ti 💌</h2>
+        <p class="section-subtext">Escrita con calma y con todo mi corazón.</p>
+      </div>
+
+      <div class="letter-container">
+        <div class="letter-envelope" id="envelope">
+          <div class="letter-paper glass-card">
+            <div class="letter-heading">
+              <span class="letter-to">Mariana,</span>
+              <span class="letter-date">Para ti ♡</span>
+            </div>
+
+            <div class="letter-content">
+              <p>
+                Quise escribirte esta carta con calma, porque a veces en el día a día no encuentro
+                las palabras exactas o el momento para decirte todo lo que significas para mí. Pero hoy
+                quiero que lo leas y te quede completamente claro:
+                <strong>te amo y te adoro con todo mi corazón</strong>.
+              </p>
+
+              <p>
+                Me pongo a pensar en cómo empezó todo, en ese trabajo de filosofía sobre el epicureísmo,
+                y me da risa y ternura a la vez. Quién iba a pensar que una tarea sobre la tranquilidad
+                y los placeres simples de la vida terminaría presentándome a alguien que se convertiría
+                en una de las personas más importantes para mí. Desde ahí no paramos de hablar: vinieron
+                las tardes jugando Roblox en <em>Roba un brainrot</em> y en <em>99 noches</em>, las risas
+                por cualquier tontería y las conversaciones que se fueron haciendo cada vez más nuestras.
+              </p>
+
+              <p>
+                Quiero darte las gracias de verdad. Gracias por escucharme, por aguantarme cuando me pongo
+                intenso o distraído, por reírte conmigo y por estar ahí tanto en los días buenos como en
+                los momentos en que las cosas no han sido fáciles. Me encanta cómo eres: tu calma, tu
+                inteligencia, tu forma de pensar y ese carácter tan tuyo que no cambia por nadie. Valoro
+                muchísimo tu espacio y la manera en que quieres; sé que no necesitas estar diciendo cosas
+                cursis a cada rato para demostrarme que te importo, y créeme que cada pequeño detalle
+                tuyo lo guardo con mucho cariño.
+              </p>
+
+              <p>
+                No busco una relación perfecta ni de fantasía. Sé que somos dos personas distintas
+                aprendiendo en el camino, y lo que más deseo es que sigamos intentándolo juntos: que podamos
+                hablar con total confianza de lo que sentimos, que disfrutemos de las cosas simples como
+                sentarnos a hablar o ver algo juntos, y que sigamos construyendo esto paso a paso.
+              </p>
+
+              <p>
+                Aquel día en la mecedora de tu sala fue solo el inicio de muchas cosas lindas que nos faltan
+                por vivir. Gracias por ser tú, por compartir tu tiempo conmigo y por hacerme tan feliz.
+              </p>
+
+              <p class="letter-closing">
+                Te amo con todo mi corazón.
+              </p>
+            </div>
+
+            <!-- Polaroid interactiva en la carta -->
+            <div class="letter-photo-corner">
+              <img src="assets/fotos/gato_corazon_amor.jpg" alt="Con todo mi amor">
+              <span>Para ti ♡</span>
+            </div>
+
+            <div class="letter-signature">
+              <p>Con todo mi cariño,</p>
+              <div class="signature-name">Tu novio ♡</div>
+            </div>
+
+            <div class="letter-seal-action">
+              <button id="btn-seal" class="seal-btn" title="Tocar para enviar un abrazo virtual">
+                <span class="seal-icon">❤️</span>
+                <span class="seal-text">Sellar con un beso</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================
+       MODAL DE CELEBRACIÓN DE LA PROPUESTA (¡DIJO QUE SÍ!)
+       ======================================================= -->
+  <div id="modal-proposal-success" class="modal-overlay hidden">
+    <div class="modal-card glass-card celebration-modal-card">
+      <div class="celebration-badge">¡SABÍA QUE DIRÍAS QUE SÍ! 🥰🎉</div>
+      <div class="celebration-photo-wrap">
+        <img src="assets/fotos/gato_corazon_amor.jpg" alt="Amor puro">
+      </div>
+      <h3 class="celebration-title">¡Oficialmente no tenías escapatoria! ♡</h3>
+      <p class="celebration-text">
+        Gracias por elegirme cada día, por tus risas y por cada momento a tu lado.
+        Prometo cuidarte, escucharte, hacerte reír y quererte tal y como eres siempre.
+      </p>
+      <div class="celebration-sign">
+        <strong>Te amo con todo mi corazón, Mariana.</strong>
+      </div>
+      <button id="btn-close-proposal-modal" class="btn-action">
+        <span>Seguir disfrutando nuestro rincón ♡</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- =======================================================
+       PANTALLA DE EMERGENCIA "NO TOCAR"
+       Pantalla en negro absoluto durante 5 segundos sin letras
+       ======================================================= -->
+  <div id="blackout-screen" class="blackout-overlay hidden"></div>
+
+  <!-- Modal / Diálogo para Quejitas Divertidas -->
+  <div id="modal-quejita" class="modal-overlay hidden">
+    <div class="modal-card glass-card">
+      <h3>Buzón de Quejitas ✍️</h3>
+      <p>Escribe tu queja con confianza, la voy a leer con atención:</p>
+      <textarea id="texto-quejita" placeholder="Ej: A veces eres muy distraído / No me avisaste..." rows="3"></textarea>
+      <div class="modal-buttons">
+        <button id="btn-enviar-quejita" class="btn-action">Enviar Queja</button>
+        <button id="btn-cerrar-modal" class="btn-outline-custom">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =======================================================
+       REPRODUCTOR OFICIAL DE SPOTIFY (FLOTANTE)
+       ======================================================= -->
+  <div id="mini-music-player" class="music-player-widget glass-card spotify-widget-mode">
+    <!-- Barra Superior: Logo Spotify, Título, Contador y Controles -->
+    <div class="spotify-widget-header">
+      <div class="spotify-header-left">
+        <span class="spotify-icon-badge" title="Spotify Oficial">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="#1DB954"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+        </span>
+        <div class="spotify-header-text">
+          <span class="spotify-widget-title">Nuestra Playlist ♡</span>
+          <span class="spotify-track-counter" id="spotify-track-counter">1 de 9</span>
+        </div>
+      </div>
+      <div class="spotify-header-controls">
+        <button id="btn-prev-track" class="spotify-ctrl-btn" title="Canción anterior" aria-label="Canción anterior">⏮</button>
+        <button id="btn-play-pause-spotify" class="spotify-ctrl-btn" title="Reproducir / Pausar" aria-label="Reproducir o pausar">▶</button>
+        <button id="btn-next-track" class="spotify-ctrl-btn" title="Siguiente canción" aria-label="Siguiente canción">⏭</button>
+        <button id="btn-playlist-toggle" class="spotify-ctrl-btn" title="Ver lista de canciones (9)" aria-label="Lista de canciones">📜</button>
+        <button id="btn-toggle-collapse" class="spotify-ctrl-btn btn-close-widget" title="Minimizar reproductor" aria-label="Minimizar">✕</button>
+      </div>
+    </div>
+
+    <!-- Banner de Autoplay del Navegador (Aparece únicamente si el navegador requiere pulsar para continuar) -->
+    <div id="spotify-autoplay-banner" class="spotify-autoplay-banner hidden">
+      <button id="btn-continue-next" class="btn-continue-next" title="Continuar con la siguiente canción">
+        <span class="play-triangle">▶</span> Continuar con la siguiente
+      </button>
+    </div>
+
+    <!-- Contenedor Oficial del Spotify iFrame API (Un solo embed oficial dinámico) -->
+    <div class="spotify-embed-container" id="spotify-embed-container">
+      <div id="spotify-embed-target"></div>
+    </div>
+
+    <!-- Menú Desplegable con las 9 Canciones Seleccionables -->
+    <div id="player-playlist-menu" class="spotify-playlist-drawer hidden">
+      <div class="spotify-drawer-header">
+        <span class="drawer-header-title">Canciones Seleccionadas (9)</span>
+        <button id="btn-close-playlist" class="drawer-close-btn" aria-label="Cerrar lista">✕</button>
+      </div>
+      <div class="spotify-drawer-list" id="spotify-drawer-list">
+        <!-- Renderizado dinámicamente con las 9 canciones oficiales -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Botón Burbuja Flotante para reabrir el reproductor si fue minimizado -->
+  <button id="btn-open-player" class="player-reopen-bubble glass-card hidden" title="Abrir música de Spotify" aria-label="Abrir música">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="#1DB954"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+  </button>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer-personal">
+    <div class="container footer-content">
+      <div class="footer-cats-row">
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+      </div>
+      <p class="footer-title">Hecho especialmente para Mariana</p>
+      <p class="footer-sub">
+        Con recuerdos reales, gatos y todo mi amor.
+      </p>
+      <p class="footer-copy">♡ Siempre tú y yo</p>
+    </div>
+  </footer>
+
+  <!-- Spotify iFrame API Oficial -->
+  <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+  <script src="script.js"></script>
+</body>
+</html>

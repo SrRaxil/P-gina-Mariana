@@ -1,0 +1,52 @@
+Server process PID: 16119
+127.0.0.1 - - [11/Sep/2026 05:31:10] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 05:31:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 05:31:28] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 05:31:28] "GET /assets/fotos/foto_recuerdo_nosotros.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 05:31:28] "GET /assets/fotos/gato_filosofo_chocomilk.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 05:31:28] "GET /assets/fotos/gato_sonrojado.webp HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 05:31:28] "GET /assets/fotos/gato_sorprendido.webp HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 05:31:28] "GET /assets/fotos/gato_ojitos_tiernos.webp HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 05:31:28] "GET /script.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 05:31:28] "GET /assets/fotos/gato_corazon_amor.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 05:31:30] code 404, message File not found
+127.0.0.1 - - [11/Sep/2026 05:31:30] "GET /assets/musica.mp3 HTTP/1.1" 404 -
+127.0.0.1 - - [11/Sep/2026 05:31:30] code 404, message File not found
+127.0.0.1 - - [11/Sep/2026 05:31:30] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [11/Sep/2026 05:31:46] "GET /assets/fotos/gato_shaka_buenavibra.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 05:34:35] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 05:34:35] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 05:34:35] "GET /script.js HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 05:34:35] code 404, message File not found
+127.0.0.1 - - [11/Sep/2026 05:34:35] "GET /assets/musica.mp3 HTTP/1.1" 404 -
+127.0.0.1 - - [11/Sep/2026 05:34:35] code 404, message File not found
+127.0.0.1 - - [11/Sep/2026 05:34:35] "GET /assets/musica.mp3 HTTP/1.1" 404 -
+127.0.0.1 - - [11/Sep/2026 05:38:12] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 05:38:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 05:38:24] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 05:38:24] "GET /script.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 05:38:24] code 404, message File not found
+127.0.0.1 - - [11/Sep/2026 05:38:24] "GET /assets/musica.mp3 HTTP/1.1" 404 -
+127.0.0.1 - - [11/Sep/2026 05:38:26] code 404, message File not found
+127.0.0.1 - - [11/Sep/2026 05:38:26] "GET /assets/musica.mp3 HTTP/1.1" 404 -
+127.0.0.1 - - [11/Sep/2026 05:38:26] code 404, message File not found
+127.0.0.1 - - [11/Sep/2026 05:38:26] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [11/Sep/2026 05:42:29] code 404, message File not found
+127.0.0.1 - - [11/Sep/2026 05:42:29] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [11/Sep/2026 05:42:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 05:42:40] "GET /script.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 05:42:40] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 05:42:40] code 404, message File not found
+127.0.0.1 - - [11/Sep/2026 05:42:40] "GET /assets/musica.mp3 HTTP/1.1" 404 -
+127.0.0.1 - - [11/Sep/2026 05:42:40] code 404, message File not found
+127.0.0.1 - - [11/Sep/2026 05:42:40] "GET /assets/musica.mp3 HTTP/1.1" 404 -
+127.0.0.1 - - [11/Sep/2026 05:45:30] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 05:46:23] code 404, message File not found
+127.0.0.1 - - [11/Sep/2026 05:46:23] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [11/Sep/2026 05:46:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 05:46:27] "GET /script.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 05:46:27] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 05:46:28] code 404, message File not found
+127.0.0.1 - - [11/Sep/2026 05:46:28] "GET /assets/musica.mp3 HTTP/1.1" 404 -
+127.0.0.1 - - [11/Sep/2026 05:46:28] code 404, message File not found
+127.0.0.1 - - [11/Sep/2026 05:46:28] "GET /assets/musica.mp3 HTTP/1.1" 404 -
